@@ -22,11 +22,4 @@ exports.createPages = async ({ actions, graphql }) => {
       context: story
     })
   })
-
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
 }

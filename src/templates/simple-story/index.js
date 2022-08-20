@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from 'components/layout'
+import Seo from 'components/seo'
 import * as styles from './SimpleStory.module.scss'
 
 const SimpleStory = ({ pageContext }) => {
@@ -11,6 +12,12 @@ const SimpleStory = ({ pageContext }) => {
         <div className={styles.htmlText} dangerouslySetInnerHTML={{ __html: pageContext.html }} />
       </div>
     </Layout>
+  )
+}
+
+export const Head = ({ pageContext }) => {
+  return (
+    <Seo title={`${pageContext.frontmatter.title} | 3am`} />
   )
 }
 

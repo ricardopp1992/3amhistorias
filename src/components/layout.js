@@ -10,15 +10,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={`Title`} />
       <main>{children}</main>
-      <footer style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'flex-end',
-        margin: 'auto',
-        height: '5rem',
-        fontSize: '.7rem',
-        paddingBottom: '.5rem'
-      }}>
+      <footer>
         © {new Date().getFullYear()} &middot; 3Am Historias
       </footer>
     </>
