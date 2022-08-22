@@ -25,6 +25,7 @@ export const query = graphql`
   query AllStories {
     allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date }) {
       nodes {
+        id
         frontmatter {
           title
         }

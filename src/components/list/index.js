@@ -9,8 +9,8 @@ const List = ({ stories = [] }) => {
     <div className={styles.listContainer}>
       <ul>
       {
-        stories.map(({ frontmatter: { title } }) => (
-          <Link className={styles.link} to={`${slugify(title)}`}>
+        stories.map(({ frontmatter: { title }, id }) => (
+          <Link key={id} className={styles.link} to={`${slugify(title)}`}>
             <li>{title}</li>
           </Link>
         ))

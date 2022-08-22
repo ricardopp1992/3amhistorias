@@ -18,14 +18,14 @@ const Header = () => {
       setDarkTheme()
     }
   }
-  
+
   return (
     <header className={styles.header}>
       <Link to="/">
         {
           theme === DARK
-          ? <StaticImage style={{ width: '5rem' }} src="../../images/3am_logo.png" />
-          : <StaticImage style={{ width: '5rem' }} src="../../images/3am_logo_light.png" />
+          ? <StaticImage style={{ width: '5rem' }} src="../../images/3am_logo.png" alt="" />
+          : <StaticImage style={{ width: '5rem' }} src="../../images/3am_logo_light.png" alt="" />
         }
       </Link>
       <button className={styles.themeButton} onClick={handleThemeSwitch}>
