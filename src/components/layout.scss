@@ -2,10 +2,10 @@
 @import "styles/media-query.scss";
 
 body {
-  background-color: #000;
+  background-color: var(--background-color);
   padding: 0 5%;
 
-  
+
   main {
     padding: 3rem 0;
     min-height: calc(100vh - ($headerHeight * 1.3));

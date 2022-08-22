@@ -1,8 +1,7 @@
 @import "styles/media-query.scss";
 
 .storyContainer {
-  // margin: 0 1%;
-  color: lightgray;
+  color: var(--text-color);
 
   @include for-tablet-landscape-up {
     margin: 0 20%;
