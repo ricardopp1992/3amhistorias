@@ -12,6 +12,13 @@ const slugify = (text) => {
     .toLocaleLowerCase()
 }
 
+const addIdToTags = (html) => {
+  return html.split('<p>')
+    .map((paragraph, index) => `<p id="${index}">${paragraph}`)
+    .join('')
+}
+
 module.exports = {
-  slugify
+  slugify,
+  addIdToTags,
 }

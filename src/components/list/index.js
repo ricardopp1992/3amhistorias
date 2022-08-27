@@ -7,7 +7,7 @@ import * as styles from "./styles.module.scss"
 const List = ({ stories = [] }) => {
   return (
     <div className={styles.listContainer}>
-      <ul>
+      <ol>
       {
         stories.map(({ frontmatter: { title }, id }) => (
           <Link key={id} className={styles.link} to={`${slugify(title)}`}>
@@ -15,7 +15,7 @@ const List = ({ stories = [] }) => {
           </Link>
         ))
       }
-      </ul>
+      </ol>
     </div>
   )
 }
